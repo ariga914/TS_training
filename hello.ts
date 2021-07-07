@@ -3,3 +3,5 @@ function sayHello(name: string) {
 }
 
 sayHello("Kitty");
+
+console.log("ff");
