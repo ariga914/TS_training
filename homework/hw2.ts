@@ -43,3 +43,4 @@ for (let i: number = 0; i <shapeArray.length; i++) {
 }
 
 console.log(result);
+console.log("Hello world!!!");
