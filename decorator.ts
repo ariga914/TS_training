@@ -10,7 +10,6 @@ function Tagging(target: any) {
 }
 
 @Logger("Your message here")
-@Tagging
 class HumanBeing {
     name = "John";
 
@@ -21,4 +20,12 @@ class HumanBeing {
 
 const a = new HumanBeing();
 
-
+//When excute above code, you will see the result like below:
+//Calling decorator...
+//class Person {
+//    constructor() {
+//       this.name = "John";
+//        console.log("Calling Person constructor");
+//    }
+//} 
+//Calling Person constructor
