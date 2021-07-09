@@ -18,6 +18,8 @@ function id() {
             get: getter,
             set: setter,
         });
+        console.log(target);
+        console.log(name);
     };
 };
 
@@ -30,7 +32,8 @@ class manKind {
     }
 }
 
-const firstPerosn = new manKind();
-firstPerosn.show();
-const secondPerson = new manKind();
-secondPerson.show();
+const firstniki = new manKind();
+firstniki.show();
+const secondniki = new manKind();
+secondniki.show();
+console.log(typeof(firstniki._personID));

@@ -21,6 +21,8 @@ function id() {
             get: getter,
             set: setter
         });
+        console.log(target);
+        console.log(name);
     };
 }
 ;
@@ -36,7 +38,8 @@ var manKind = /** @class */ (function () {
     ], manKind.prototype, "_personID");
     return manKind;
 }());
-var firstPerosn = new manKind();
-firstPerosn.show();
-var secondPerson = new manKind();
-secondPerson.show();
+var firstniki = new manKind();
+firstniki.show();
+var secondniki = new manKind();
+secondniki.show();
+console.log(typeof (firstniki._personID));
