@@ -9,6 +9,7 @@ function AddUserHook(message: string) {
         descriptor.value = function (...args: any[]) {
             console.log("Do something before addUser...");
             original.apply(this, args);
+            console.log(this);
             console.log("Do something after addUser...");
         };
 
