@@ -1,4 +1,9 @@
-class Square {
+interface Shape {
+    width: number;
+    calculArea(): number;
+}
+
+class Square implements Shape {
     width: number;
 
     constructor(width: number) {
@@ -30,17 +35,12 @@ const rectangle1 = new Rectangle(3, 2);
 const rectangle2 = new Rectangle(5, 1);
 const rectangle3 = new Rectangle(4, 6);
 
-const shapeArray: object[] = [square1, rectangle1, square2, rectangle2, rectangle3];
+const shapeArray: Array<Shape> = [square1, rectangle1, square2, rectangle2, rectangle3];
 
-const result: number[] = [];
+let result: number[] = [];
 
 for (let i: number = 0; i <shapeArray.length; i++) {
-    if (shapeArray[i] instanceof Square || shapeArray[i] instanceof Rectangle) {
         result.push(shapeArray[i].calculArea());
-    } else {
-        continue;
-    }
 }
 
 console.log(result);
-console.log("Hello world!!!");
