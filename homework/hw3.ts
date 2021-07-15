@@ -7,7 +7,7 @@ function required(message: string) {
 
         const setter = (naming: string) => {
             if(naming.length === 0) {
-                value = message;
+                console.log(message);
             } else {
                 value = naming;
             }
